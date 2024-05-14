@@ -16,6 +16,7 @@ while True:
         
         random_choice= random.randint(0,2)
         computer_choice = choice[random_choice]
+        print("Computer chose " + computer_choice)
         if user_choice == " rock " and computer_choice == "scissor":
             print("You Won!")
             user_win =+ 1
@@ -25,6 +26,8 @@ while True:
         elif   user_choice == " paper " and computer_choice == "scissor" :
             print("You Won!") 
             user_win += 1 
+        elif user_choice == computer_choice:
+            print("same choice, draw")
         else:
             print ("You lost!")
             computer_win += 1
